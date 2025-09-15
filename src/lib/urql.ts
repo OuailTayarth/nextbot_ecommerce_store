@@ -7,6 +7,7 @@ import {
 import { env } from "../env.mjs";
 import { registerUrql } from "@urql/next/rsc";
 
+// To talk to supabase GraphQL client
 export const makeClient = (access_token?: string) => {
   return createClient({
     url: `https://${env.NEXT_PUBLIC_SUPABASE_PROJECT_REF}.supabase.co/graphql/v1`,

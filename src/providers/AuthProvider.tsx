@@ -1,12 +1,18 @@
 "use client";
 
 import { CartItems, useCartStore } from "@/features/carts";
+import useWishlistStore from "@/features/wishlists/useWishlistStore";
 import { useToast } from "@/components/ui/use-toast";
-import { AuthUser, Session } from "@supabase/supabase-js";
+import { AuthUser, Session } from "@supabase/supabase-js"; // Types
 import { nanoid } from "nanoid";
 import { createContext, useContext, useEffect, useState } from "react";
 import supabase from "../lib/supabase/client";
-import useWishlistStore from "@/features/wishlists/useWishlistStore";
+
+/**
+ * wires Supabase’s server client into every Next.js request,
+ * syncing auth cookies and fetching
+ * the current user so protected routes can see the session
+ */
 
 type SupabaseAuthContextType = {
   user: AuthUser | null;

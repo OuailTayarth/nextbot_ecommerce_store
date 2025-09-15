@@ -1,6 +1,7 @@
 import { env } from "@/env.mjs";
 
 import { CookieOptions, createServerClient } from "@supabase/ssr";
+// read and write cookies on the server.
 import { cookies } from "next/headers";
 
 export function createClient({

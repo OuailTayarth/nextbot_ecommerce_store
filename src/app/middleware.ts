@@ -1,6 +1,10 @@
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
+/***
+ * Middleware: wires Supabase’s server client into every Next.js request, 
+ * keep cookies consistent, fetching the current user so protected routes can see the session
+ */
 export async function middleware(request: NextRequest) {
   let response = NextResponse.next({
     request: {

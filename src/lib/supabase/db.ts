@@ -6,8 +6,9 @@ import * as schema from "./schema";
 if (!process.env.DATABASE_URL) {
   console.log("🔴 no database URL");
 }
-
+// connect to postgreSQL supabase database
 const client = postgres(env.DATABASE_URL, { prepare: false });
+
 
 const db = drizzle(client, { schema });
 

@@ -11,7 +11,7 @@ import createClient from "@/lib/supabase/server";
 export const getCurrentUser = async () => {
   const cookieStore = cookies();
   const supabase = createServerClient({ cookieStore });
-
+  
   const userResponse = await supabase.auth.getUser();
   return userResponse.data.user;
 };

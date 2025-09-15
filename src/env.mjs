@@ -1,5 +1,6 @@
 import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
+// TODO not exposing sentitive values on the browser side but moved them on the server side
 
 export const env = createEnv({
   /**
