@@ -1,10 +1,12 @@
 # NextBot: Discover AI-powered robotics that fit your lifestyle.
 NextBot is a full-stack e-commerce app for buying robotics products (humanoids and robot dogs).   
-I built it as a deep dive learning project to master Supabase database, GraphQL and full-stack application development. It uses the Next.js App Router, GraphQL for data fetching, Supabase for PostgresSQL + RLS, Drizzle for schema/seeding, Tailwind + shadcn/ui for the UI, and AWS S3 for media uploads.
 
-<a href="https://ibb.co/0rc1Cw0"><img src="https://i.ibb.co/bRsPwN3c/newest.png" alt="NextBot" border="0"></a>
+I built it as a deep-dive learning project to strengthen my skills with Supabase (PostgreSQL + RLS), GraphQL, and in designing a scalable end-to-end web application. It uses the Next.js App Router, GraphQL for data fetching, Supabase for PostgreSQL + RLS, Drizzle for schema/migrations and seeding, Tailwind CSS + shadcn/ui for the UI, and AWS S3 for media uploads.
 
-**Live Demo:** [nextbotstore.netlify.app](https://nextbotstore.netlify.app)
+<a href="https://myvediosportfolio.s3.eu-north-1.amazonaws.com/nextbotscreen.png"><img src="https://myvediosportfolio.s3.eu-north-1.amazonaws.com/nextbotscreen.png" alt="NextBot" border="0"></a>
+
+**Live Demo:** <a href="https://nextbotstore.netlify.app/" target="_blank">https://nextbotstore.netlify.app/</a>     
+**Video Demo:** <a href="https://myvediosportfolio.s3.eu-north-1.amazonaws.com/Nextbot.mp4" target="_blank">https://myvediosportfolio.s3.eu-north-1.amazonaws.com/Nextbot.mp4</a>
 
 ## Features
 - **GraphQL Search** – Flexible, fast queries with lean data fetching.
