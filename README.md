@@ -1,31 +1,61 @@
-# TitleSafe
+# NextBot: Discover AI-powered robotics that fit your lifestyle.
 
-TitleSafe is a fullstack web application built with Next.js/TypeScript on the front end, and blockchain, AWS on the backend to store data. It enables secure and transparent recording of property titles. The app allows users to tokenize property titles into NFTs (Non-Fungible Tokens) with associated metadata. It leverages blockchain for immutable, decentralized storage of essential documents and AWS for mutable data. The app features recording of sold or bought property details and filtering titles by instrument number. It also includes a role-based access control system, allowing authorized users (like the recorder’s office) to approve titles after verifying documents and information
+NextBot is a full-stack e-commerce app for buying robotics products (humanoids and robot dogs).
 
-<a href="https://ibb.co/0rc1Cw0"><img src="https://i.ibb.co/Wf67kTr/Propertytitle.png" alt="Propertytitle" border="0"></a>
+I built this project as a deep dive to strengthen my skills with Supabase (PostgreSQL + RLS), GraphQL, and in designing a scalable end-to-end web application. It uses the Next.js App Router, GraphQL for data fetching, Supabase for PostgreSQL + RLS, Drizzle for schema/migrations and seeding, Tailwind CSS + shadcn/ui for the UI, and AWS S3 for media uploads.
 
-## Problem I Solved
+<a href="https://myvediosportfolio.s3.eu-north-1.amazonaws.com/nextbotscreen.png"><img src="https://myvediosportfolio.s3.eu-north-1.amazonaws.com/nextbotscreen.png" alt="NextBot" border="0"></a>
 
-U.S. based real estate agencies faced recurring property title fraud between buyers and sellers due to the current insecure and centralized record-keeping systems.
+**Live Demo:** <a href="https://nextbotstore.netlify.app/" target="_blank">https://nextbotstore.netlify.app/</a>  
+**Video Demo:** <a href="https://myvediosportfolio.s3.eu-north-1.amazonaws.com/Nextbot.mp4" target="_blank">https://myvediosportfolio.s3.eu-north-1.amazonaws.com/Nextbot.mp4</a>
 
-## Technical Approach
+## Features
 
-Built a hybrid architecture to balance security, flexibility, and compliance:
+- **GraphQL Search** – Flexible, fast queries with lean data fetching.
+- **Next.js 14 App Router** – Modern routing for performance and structure.
+- **Direct S3 Uploads** – Custom uploader sending files straight to Amazon S3.
+- **Supabase RLS** – Row-level security to protect user data.
+- **Zod Validation** – Strong validation for forms and routes.
+- **Responsive UI** – Works flawlessly on all devices.
+- **Drizzle ORM** – Typed schema and migrations for reliable DB work.
+- **SEO Ready** – Optimized metadata for discoverability.
 
-- **AWS S3** for secure, mutable document storage (like property deeds) and private user data
-- **Blockchain** for immutable, verifiable signatures and transaction history
-- **Role-Based Access Control** to let government officials verify and approve titles
-- Filtering options for efficient title lookup
+## Tech Stack
 
-## Business Impact
+Next.js 14 | React 18 + TypeScript | GraphQL | Supabase (Postgres) | Drizzle ORM | Zod | AWS S3 | Tailwind CSS | shadcn/ui
 
-MVP adopted for regional pilot testing by a U.S. government agency to secure property title records and reduce fraud.
+## Getting Started
 
-## Technology Used:
+**Prerequisites**
 
-- **Front-end**: Next.js, TypeScript
-- **Back-end**: AWS S3, Blockchain (Ethereum-compatible)
+- Node.js (v12.x or later)
+- npm or yarn
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/OuailTayarth/nextbot_ecommerce_store.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd nextbot_ecommerce_store
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+Open http://localhost:3000
 
 ## License
 
-This project is licensed under a Proprietary License. For usage permissions, please contact the author.
+MIT

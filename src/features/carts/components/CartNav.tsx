@@ -38,7 +38,11 @@ const UserCartNav = ({ userId }: { userId: string }) => {
   const carts = data?.cartsCollection;
 
   const serverCount = useMemo(
-    () => (carts?.edges || []).reduce((acc, cur) => acc + cur.node.quantity, 0),
+    () =>
+      (carts?.edges ?? []).reduce(
+        (acc, cur) => acc + (cur.node?.quantity ?? 0),
+        0
+      ),
     [carts.edges]
   );
 
